@@ -97,6 +97,9 @@ INSERT INTO like_res (user_id, res_id, date_like) VALUES
 (4, 10, '2024-07-25'),
 (5, 3, '2024-08-30');
 
+# select data sau khi tạo
+select * from like_res;
+
 # tạo table rate_res
 CREATE TABLE rate_res(
 	user_id INT,
@@ -131,10 +134,8 @@ INSERT INTO rate_res (user_id, res_id, amount, date_rate) VALUES
 (4, 14, 5, '2024-07-25'),
 (5, 17, 3, '2024-08-30');
 
-select * from rate_res;
-
 # select data sau khi tạo
-select * from like_res;
+select * from rate_res;
 
 # tạo table food
 CREATE TABLE foods(
@@ -277,7 +278,7 @@ VALUES
 # select data sau khi tạo
 select * from sub_food;
 
-# tạo table sub_food
+# tạo table food_type
 
 CREATE TABLE food_type (
 	type_id INT PRIMARY KEY AUTO_INCREMENT,
